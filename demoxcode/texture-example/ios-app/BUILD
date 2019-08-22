@@ -144,6 +144,7 @@ objc_library(
         "TextureApp/NoArc.m",
     ],
     sdk_frameworks = [
+        "CoreText",
         "CoreLocation",
         "AudioToolbox",
         "Security",
@@ -153,6 +154,9 @@ objc_library(
         "Foundation",
         "CoreImage",
         "Intents",
+        "SystemConfiguration",
+        "CoreServices",
+        "SafariServices"
     ],
     xibs = ["TextureApp/TextureAppViewController.xib"],
     deps = [
